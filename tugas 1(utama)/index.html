@@ -8,7 +8,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <title>Blog Kucing</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2193b0",
+              secondary: "#6dd5ed"
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"]
+            }
+          }
+        }
+      }
+    </script>
 
     <style>
         body {
@@ -30,23 +46,15 @@
         </div>
     </header>
 
-    <!-- NAVBAR -->
-    <nav class="bg-white shadow-md py-4">
-        <ul class="flex justify-center gap-4 font-semibold">
-            <li><a href="#" class="px-4 py-2 rounded-full bg-blue-500 text-white hover:bg-blue-600">Beranda</a></li>
-            <li><a href="cv.html" class="px-4 py-2 rounded-full bg-yellow-400 hover:bg-yellow-500">CV Saya</a></li>
-            <li><a href="kontak.html" class="px-4 py-2 rounded-full bg-green-500 text-white hover:bg-green-600">Kontak</a></li>
-        </ul>
-    </nav>
-
-    <!-- 3 BLOK AWAL -->
+    <!-- 3 BLOK -->
     <section class="max-w-6xl mx-auto mt-10 px-4">
         <div class="grid md:grid-cols-3 gap-6 text-center">
 
             <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
                 <h2 class="text-xl font-bold mb-2">📝 Blog Saya</h2>
                 <p class="text-gray-600 mb-4">Artikel seputar kucing</p>
-                <button onclick="window.scrollTo(0,600)" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">
+                <button onclick="window.location.href='blog.html'" 
+                class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">
                     Baca Blog
                 </button>
             </div>
@@ -59,13 +67,14 @@
                 </button>
             </div>
 
-            <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
-                <h2 class="text-xl font-bold mb-2">📩 Kontak</h2>
-                <p class="text-gray-600 mb-4">Hubungi saya</p>
-                <button onclick="window.location.href='kontak.html'" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600">
-                    Hubungi
-                </button>
-            </div>
+         <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
+    <h2 class="text-xl font-bold mb-2">📩 Kontak</h2>
+    <p class="text-gray-600 mb-4">Hubungi saya</p>
+<button onclick="window.location.href='kontak.html'" 
+        class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600">
+    Kontak Kami
+</button>
+</div>
 
         </div>
     </section>
@@ -74,104 +83,90 @@
     <section class="text-center mt-10">
         <h2 class="text-xl font-bold mb-3">🔢 Counter Interaktif</h2>
         <p id="nomor" class="text-3xl font-bold mb-4">0</p>
+
         <button id="tambah" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">Tambah</button>
         <button id="kurang" class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600">Kurang</button>
+
+        <!-- 🔥 TEMPAT GIF -->
+        <div id="gifContainer" class="mt-6 flex justify-center"></div>
     </section>
 
-    <!-- BLOG CONTENT -->
+    <!-- BLOG -->
     <div class="max-w-4xl mx-auto mt-10 p-4">
 
         <div class="bg-white p-6 rounded-2xl shadow mb-6">
             <h2 class="text-blue-500 text-xl font-bold mb-3">Tentang Kucing</h2>
-            <p>
-                Kucing adalah salah satu hewan peliharaan paling populer di dunia.
-                Hewan ini dikenal memiliki tingkah laku yang lucu, mandiri,
-                namun juga sangat manja terhadap pemiliknya.
-            </p>
+            <p>Kucing adalah hewan peliharaan populer.</p>
         </div>
 
         <div class="bg-white p-6 rounded-2xl shadow mb-6">
             <h2 class="text-blue-500 text-xl font-bold mb-3">Jenis-Jenis Kucing</h2>
             <ul class="list-disc ml-5">
-                <li>Kucing Persia – Berbulu panjang</li>
-                <li>Kucing Anggora – Aktif</li>
-                <li>Kucing Kampung – Kuat</li>
-                <li>Kucing Bengal – Corak unik</li>
+                <li>Persia</li>
+                <li>Anggora</li>
+                <li>Kampung</li>
+                <li>Bengal</li>
             </ul>
         </div>
 
         <div class="bg-white p-6 rounded-2xl shadow mb-6">
-            <h2 class="text-blue-500 text-xl font-bold mb-3">Makanan Favorit</h2>
-            <ol class="list-decimal ml-5">
-                <li>Ikan</li>
-                <li>Ayam</li>
-                <li>Dry food</li>
-                <li>Wet food</li>
-            </ol>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow mb-6">
-            <h2 class="text-blue-500 text-xl font-bold mb-3">Video Kucing Lucu</h2>
+            <h2 class="text-blue-500 text-xl font-bold mb-3">Video</h2>
             <iframe class="w-full h-[300px] rounded-xl"
                 src="https://www.youtube.com/embed/LMB3gIhSR78"
                 allowfullscreen>
             </iframe>
         </div>
+        <div class="bg-white p-6 rounded-2xl shadow mb-6"> <h2 class="text-blue-500 text-xl font-bold mb-3">Informasi Singkat</h2> <table class="w-full border"> <tr class="bg-blue-500 text-white"> <th class="p-2">Aspek</th> <th class="p-2">Keterangan</th> </tr> <tr> <td class="p-2 border">Habitat</td> <td class="p-2 border">Rumah</td> </tr> <tr> <td class="p-2 border">Makanan</td> <td class="p-2 border">Ikan & Daging</td> </tr> <tr> <td class="p-2 border">Sifat</td> <td class="p-2 border">Manja & Aktif</td> </tr> </table> </div>
 
-        <div class="bg-white p-6 rounded-2xl shadow mb-6">
-            <h2 class="text-blue-500 text-xl font-bold mb-3">Informasi Singkat</h2>
-            <table class="w-full border">
-                <tr class="bg-blue-500 text-white">
-                    <th class="p-2">Aspek</th>
-                    <th class="p-2">Keterangan</th>
-                </tr>
-                <tr>
-                    <td class="p-2 border">Habitat</td>
-                    <td class="p-2 border">Rumah</td>
-                </tr>
-                <tr>
-                    <td class="p-2 border">Makanan</td>
-                    <td class="p-2 border">Ikan & Daging</td>
-                </tr>
-                <tr>
-                    <td class="p-2 border">Sifat</td>
-                    <td class="p-2 border">Manja & Aktif</td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- BUTTON -->
         <div class="text-center">
-            <button onclick="alert('Terima kasih sudah membaca!')" class="bg-pink-500 text-white px-5 py-2 rounded-full hover:bg-pink-600">❤️ Suka Artikel</button>
+            <button onclick="alert('Terima kasih!')" class="bg-pink-500 text-white px-5 py-2 rounded-full">❤️ Suka</button>
         </div>
 
     </div>
 
     <footer class="text-center p-4 bg-black text-white mt-10">
-        © 2026 Blog Kucing | Dibuat oleh Riyas
+        © 2026 Blog Kucing
     </footer>
 
-    <!-- JAVASCRIPT -->
-    <script>
-        let number = document.getElementById("nomor");
-        let btnTambah = document.getElementById("tambah");
-        let btnKurang = document.getElementById("kurang");
+<script>
+let number = document.getElementById("nomor");
+let btnTambah = document.getElementById("tambah");
+let btnKurang = document.getElementById("kurang");
+let gifContainer = document.getElementById("gifContainer");
 
-        let count = 0;
+let count = 0;
 
-        function tambah(){
-            count++;
-            number.innerText = count;
-        }
+function tampilkanGif() {
+    let gifHTML = "";
 
-        function kurang(){
-            count--;
-            number.innerText = count;
-        }
+    if (count >= 10) {
+        gifHTML = `<img src="https://media.tenor.com/lfDATg4Bhc0AAAAM/happy-cat.gif" class="w-64 rounded-xl shadow-lg">`;
+    } else if (count >= 5) {
+        gifHTML = `<img src="https://media.tenor.com/pdX9YTI4_eoAAAAM/cat-cat-with-tongue.gif" class="w-64 rounded-xl shadow-lg">`;
+    } else if (count >= 3) {
+        gifHTML = `<img src="https://media.tenor.com/U3no6l5qz7YAAAAM/shock-cat-shock.gif" class="w-64 rounded-xl shadow-lg">`;
+    } else {
+        gifHTML = "";
+    }
 
-        btnTambah.addEventListener("click", tambah);
-        btnKurang.addEventListener("click", kurang);
-    </script>
+    gifContainer.innerHTML = gifHTML;
+}
+
+function tambah(){
+    count++;
+    number.innerText = count;
+    tampilkanGif();
+}
+
+function kurang(){
+    count--;
+    number.innerText = count;
+    tampilkanGif();
+}
+
+btnTambah.addEventListener("click", tambah);
+btnKurang.addEventListener("click", kurang);
+</script>
 
 </body>
-</html
+</html>

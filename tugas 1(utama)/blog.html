@@ -1,74 +1,90 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Tentang Kucing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Tentang Kucing</title>
+
+<!-- TailwindCSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+  body { font-family: 'Poppins', sans-serif; }
+</style>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
 
-    <h1>Kucing sebagai Hewan Peliharaan</h1>
-    <small>Ditulis oleh Riyas Fahmi Rasad</small>
+<!-- HEADER -->
+<header class="bg-gradient-to-r from-blue-400 to-cyan-300 p-10 text-center text-white rounded-b-3xl shadow-md">
+  <h1 class="text-4xl md:text-5xl font-extrabold mb-2">🐱 Blog Dunia Kucing</h1>
+  <p class="text-lg md:text-xl">Ditulis oleh Riyas Fahmi Rasad</p>
+</header>
 
-    <hr>
+<!-- CONTENT -->
+<main class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-3xl shadow-lg">
 
-    <p>
-        Kucing adalah salah satu hewan peliharaan yang paling banyak ditemui
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4 text-blue-500">Kucing sebagai Hewan Peliharaan</h2>
+    <p class="mb-4">Kucing adalah salah satu hewan peliharaan yang paling banyak ditemui
         di lingkungan sekitar kita. Hewan ini dikenal memiliki sifat yang
         tenang, lucu, dan mudah beradaptasi dengan manusia. Karena itulah,
-        banyak orang memilih kucing sebagai teman di rumah.
-    </p>
+        banyak orang memilih kucing sebagai teman di rumah.</p>
+    <p>Kucing juga memiliki kebiasaan yang unik. Mereka sering tidur dalam waktu yang lama, bermain sendiri, dan sesekali menunjukkan sikap manja kepada pemiliknya.</p>
+  </section>
 
-    <p>
-        Selain mudah dipelihara, kucing juga memiliki kebiasaan yang unik.
-        Mereka sering tidur dalam waktu yang lama, bermain sendiri,
-        dan sesekali menunjukkan sikap manja kepada pemiliknya.
-    </p>
-
-    <hr>
-
-    <h2>Ciri-Ciri Umum Kucing</h2>
-    <ul>
-        <li>Memiliki bulu yang halus</li>
-        <li>Pendengaran yang tajam</li>
-        <li>Suka membersihkan diri</li>
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4 text-blue-500">Ciri-Ciri Umum Kucing</h2>
+    <ul class="list-disc ml-5 space-y-1">
+      <li>Memiliki bulu yang halus</li>
+      <li>Pendengaran yang tajam</li>
+      <li>Suka membersihkan diri</li>
     </ul>
+  </section>
 
-    <hr>
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4 text-blue-500">Kebiasaan Kucing Sehari-hari</h2>
+    <p class="mb-4">Dalam kehidupan sehari-hari, kucing menghabiskan banyak waktunya untuk tidur dan beristirahat. Namun saat aktif, kucing sangat lincah dan suka bermain dengan benda-benda kecil di sekitarnya.</p>
+    <p>Kucing juga dikenal sebagai hewan yang cukup mandiri, tetapi tetap membutuhkan perhatian dan kasih sayang dari manusia.</p>
+  </section>
 
-    <h2>Kebiasaan Kucing Sehari-hari</h2>
-    <p>
-        Dalam kehidupan sehari-hari, kucing menghabiskan banyak waktunya
-        untuk tidur dan beristirahat. Namun saat aktif, kucing sangat lincah
-        dan suka bermain dengan benda-benda kecil di sekitarnya.
-    </p>
-
-    <p>
-        Kucing juga dikenal sebagai hewan yang cukup mandiri, tetapi tetap
-        membutuhkan perhatian dan kasih sayang dari manusia.
-    </p>
-
-    <hr>
-
-    <h2>Makanan yang Disukai Kucing</h2>
-    <ol>
-        <li>Ikan</li>
-        <li>Daging ayam</li>
-        <li>Makanan khusus kucing</li>
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4 text-blue-500">Makanan yang Disukai Kucing</h2>
+    <ol class="list-decimal ml-5 space-y-1">
+      <li>Ikan</li>
+      <li>Daging ayam</li>
+      <li>Makanan khusus kucing</li>
     </ol>
+  </section>
 
-    <hr>
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4 text-blue-500">Kesimpulan</h2>
+    <p>Kucing merupakan hewan peliharaan yang cocok bagi banyak orang. Dengan perawatan yang sederhana dan perhatian yang cukup, kucing dapat menjadi teman yang menyenangkan di rumah.</p>
+  </section>
 
-    <h2>Kesimpulan</h2>
-    <p>
-        Kucing merupakan hewan peliharaan yang cocok bagi banyak orang.
-        Dengan perawatan yang sederhana dan perhatian yang cukup,
-        kucing dapat menjadi teman yang menyenangkan di rumah.
-    </p>
+  <!-- IMAGE -->
+  <section class="mb-8 text-center">
+    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" alt="Kucing Lucu" class="mx-auto rounded-2xl shadow-lg w-full max-w-md hover:scale-105 transition-transform duration-300">
+  </section>
 
-    <hr>
+  <!-- LIKE BUTTON -->
+  <div class="text-center mb-6">
+    <button onclick="alert('Terima kasih! ❤️')" class="bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition">❤️ Suka</button>
+  </div>
 
-    <small>&copy; 2026 Blog Kucing Sederhana</small>
+  <!-- BACK TO HOME BUTTON -->
+  <div class="text-center mb-6">
+    <a href="index.html" class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded-full transition">🏠 Kembali ke Beranda</a>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="text-center p-6 mt-10 bg-gray-800 text-white rounded-t-3xl shadow-inner">
+  &copy; 2026 Blog Kucing Sederhana
+</footer>
 
 </body>
 </html>
