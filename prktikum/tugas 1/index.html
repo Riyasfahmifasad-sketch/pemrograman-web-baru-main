@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <title>Blog Kucing</title>
+
+    <style>
+
+        :root {
+            --primary: #2193b0;
+            --secondary: #6dd5ed;
+            --bg: #f4f6f9;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg);
+        }
+
+        /* HERO */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba') center/cover;
+            height: 60vh;
+            position: relative;
+        }
+
+        .overlay {
+            background: rgba(0,0,0,0.6);
+            height: 100%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .overlay h1 {
+            font-size: 50px;
+            font-weight: 800;
+        }
+
+        /* NAVBAR */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            color: white;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            transform: scale(1.1);
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* CARD */
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: var(--primary);
+            color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        iframe {
+            border-radius: 10px;
+        }
+
+        /* BUTTON */
+        .button-area {
+            text-align: center;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .cv-btn {
+            background: linear-gradient(45deg, #f7971e, #ffd200);
+            color: black;
+            font-weight: 700;
+        }
+
+        .contact-btn {
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>🐱 Dunia Kucing</h1>
+            <p>Hewan Lucu, Menggemaskan, dan Penuh Kasih</p>
+            <small>by Riyas Fahmi Rasad | 24 A</small>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="cv.html">CV Saya</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <section class="card">
+            <h2>Tentang Kucing</h2>
+            <p>
+                Kucing adalah salah satu hewan peliharaan paling populer di dunia.
+                Hewan ini dikenal memiliki tingkah laku yang lucu, mandiri,
+                namun juga sangat manja terhadap pemiliknya.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Jenis-Jenis Kucing</h2>
+            <ul>
+                <li>Kucing Persia – Berbulu panjang</li>
+                <li>Kucing Anggora – Aktif</li>
+                <li>Kucing Kampung – Kuat</li>
+                <li>Kucing Bengal – Corak unik</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Makanan Favorit</h2>
+            <ol>
+                <li>Ikan</li>
+                <li>Ayam</li>
+                <li>Dry food</li>
+                <li>Wet food</li>
+            </ol>
+        </section>
+
+        <section class="card">
+            <h2>Video Kucing Lucu</h2>
+            <iframe width="100%" height="300"
+                src="https://www.youtube.com/embed/LMB3gIhSR78"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section class="card">
+            <h2>Informasi Singkat</h2>
+            <table>
+                <tr>
+                    <th>Aspek</th>
+                    <th>Keterangan</th>
+                </tr>
+                <tr>
+                    <td>Habitat</td>
+                    <td>Rumah</td>
+                </tr>
+                <tr>
+                    <td>Makanan</td>
+                    <td>Ikan & Daging</td>
+                </tr>
+                <tr>
+                    <td>Sifat</td>
+                    <td>Manja & Aktif</td>
+                </tr>
+            </table>
+        </section>
+
+        <div class="button-area">
+            <button onclick="alert('Terima kasih sudah membaca!')">❤️ Suka Artikel</button>
+            <button class="cv-btn" onclick="window.location.href='cv.html'">📄 Lihat CV Saya</button>
+            <button class="contact-btn" onclick="window.location.href='kontak.html'">📩 Hubungi Kami</button>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Blog Kucing | Dibuat oleh Riyas
+    </footer>
+
+</body>
+</html>
